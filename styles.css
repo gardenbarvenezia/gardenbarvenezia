@@ -332,7 +332,7 @@ html, body {
   height: 110px;
   width: auto;
 
-  filter: brightness(0) invert(1);
+  filter: none;
   opacity: 0.95;
 
   transition: 0.3s ease;
@@ -340,8 +340,7 @@ html, body {
 
 .footer-logo img:hover {
   transform: scale(1.06);
-  filter: brightness(0) invert(1)
-          drop-shadow(0 0 22px rgba(0, 199, 122, 0.6));
+  filter: drop-shadow(0 0 22px rgba(0, 199, 122, 0.6));
 }
 
 /* TESTO */
