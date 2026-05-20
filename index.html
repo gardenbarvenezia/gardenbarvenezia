@@ -38,7 +38,7 @@
   "image": "https://gardenbarvenezia.it/garden-bar-venezia.png",
   "url": "https://gardenbarvenezia.it",
   "telephone": "+393509198767",
-  "email": "alaminsk9070@gmail.com"
+  "email": "alaminsk9070@gmail.com",
 
   "address": {
     "@type": "PostalAddress",
@@ -87,7 +87,7 @@
 
 <section class="hero">
 
-  <img src="garden-bar-venezia.png" class="hero-img" alt="Garden Bar Venezia" />
+  <link rel="preload" as="image" href="garden-bar-venezia.png"> class="hero-img" alt="Garden Bar Venezia" />
 
   <h1>Garden Bar Venezia - Spritz & Cicchetti</h1>
   <p data-i18n="subtitle"></p>
@@ -116,19 +116,23 @@
     <div class="slides">
 
       <div class="slide active">
-        <img src="spritz-aperol.webp" alt="Aperol Spritz" />
+        <img src="spritz-aperol.webp" loading="lazy" alt="Aperol Spritz">
       </div>
 
       <div class="slide">
-        <img src="cicchetti-veneziani.webp" alt="Cicchetti veneziani" />
+        <img src="cicchetti-veneziani.webp" loading="lazy" alt="Cicchetti veneziani" />
       </div>
 
       <div class="slide">
-        <img src="dolci-tipici-venezia.webp" alt="Dolci tipici veneziani" />
+        <img src="dolci-tipici-venezia.webp" loading="lazy" alt="Dolci tipici veneziani" />
       </div>
 
       <div class="slide">
-        <img src="cucina-tipica-venezia.webp" alt="Cucina tipica veneziana" />
+        <img src="cucina-tipica-venezia.webp" loading="lazy" alt="Cucina tipica veneziana" />
+      </div>
+
+      <div class="slide">
+        <img src="locali-tipici-venezia.webp" loading="lazy" alt="Locali tipici Venezia" />
       </div>
 
     </div>
@@ -155,7 +159,7 @@
 <div class="lang-box">
 
   <div class="garden-media">
-    <img src="garden-bar-venezia.webp" alt="Garden Bar Venezia giardino segreto" />
+    <img src="garden-bar-venezia.webp" loading="lazy" alt="Garden Bar Venezia giardino segreto" />
     <div class="garden-overlay"></div>
     <h3>🌿 Garden Bar Venezia</h3>
   </div>
@@ -169,10 +173,10 @@
 
 <div class="video-box">
 
-  <video class="video-arrival" controls playsinline>
-    <source src="garden-bar-venezia.mp4" type="video/mp4" />
-    Il tuo browser non supporta il video.
-  </video>
+<video class="video-arrival" controls playsinline preload="none">
+  <source src="garden-bar-venezia.mp4" type="video/mp4" />
+  Il tuo browser non supporta il video.
+</video>
 
   <p class="video-text" data-i18n="video_text"></p>
 
@@ -196,7 +200,7 @@
   <div class="footer-inner">
 
     <div class="footer-logo">
-      <img src="logo-garden-bar-venezia.svg" alt="Garden Bar Venezia Logo">
+      <img src="logo-garden-bar-venezia.svg" loading="lazy" alt="Garden Bar Venezia Logo">
     </div>
 
     <div class="footer-text">
@@ -215,6 +219,6 @@
 
 </section>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
