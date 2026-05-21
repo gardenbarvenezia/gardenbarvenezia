@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gardenbarvenezia.pages.dev/sitemap.xml
