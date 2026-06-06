@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Privacy Policy | Garden Bar Venezia</title>
+
+<meta name="description" content="Privacy Policy di Garden Bar Venezia">
+<link rel="canonical" href="https://gardenbarvenezia.pages.dev/privacy.html">
+
+<style>
+body{
+  margin:0;
+  font-family:system-ui,sans-serif;
+  background:radial-gradient(circle at top,#0f2a22,#050b09);
+  color:white;
+  line-height:1.7;
+}
+
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.card{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(0,199,122,.25);
+  border-radius:16px;
+  padding:30px;
+  backdrop-filter:blur(10px);
+}
+
+h1,h2{
+  color:#00c77a;
+}
+
+.lang{
+  display:flex;
+  gap:10px;
+  margin-bottom:25px;
+}
+
+.lang button{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(0,199,122,.25);
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.lang button:hover{
+  border-color:#00c77a;
+}
+
+a{
+  color:#00c77a;
+  text-decoration:none;
+}
+
+.back{
+  display:inline-block;
+  margin-top:25px;
+  background:#00c77a;
+  color:black;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:600;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="lang">
+  <button onclick="setLang('it')">🇮🇹 Italiano</button>
+  <button onclick="setLang('en')">🇬🇧 English</button>
+</div>
+
+<h1 data-i18n="title"></h1>
+
+<p data-i18n="updated"></p>
+
+<h2 data-i18n="owner_title"></h2>
+<p data-i18n="owner_text"></p>
+
+<h2 data-i18n="data_title"></h2>
+<p data-i18n="data_text"></p>
+
+<h2 data-i18n="cookie_title"></h2>
+<p data-i18n="cookie_text"></p>
+
+<h2 data-i18n="external_title"></h2>
+<p data-i18n="external_text"></p>
+
+<h2 data-i18n="legal_title"></h2>
+<p data-i18n="legal_text"></p>
+
+<h2 data-i18n="storage_title"></h2>
+<p data-i18n="storage_text"></p>
+
+<h2 data-i18n="rights_title"></h2>
+<p data-i18n="rights_text"></p>
+
+<h2 data-i18n="changes_title"></h2>
+<p data-i18n="changes_text"></p>
+
+<a class="back" href="/" data-i18n="back"></a>
+
+</div>
+</div>
+
+<script>
+const translations = {
+
+it: {
+
+title: "Privacy Policy",
+
+updated: "Ultimo aggiornamento: 6 giugno 2026",
+
+owner_title: "Titolare del trattamento",
+
+owner_text:
+`Garden Bar Venezia
+Calle Lunga San Barnaba 2727
+30123 Venezia (VE), Italia
+Telefono: +39 350 9198767
+Email: alaminsk9070@gmail.com`,
+
+data_title: "Dati personali trattati",
+
+data_text:
+`Questo sito web non raccoglie dati personali tramite moduli di registrazione, newsletter o aree riservate. Eventuali dati comunicati volontariamente tramite telefono o email saranno utilizzati esclusivamente per rispondere alle richieste ricevute.`,
+
+cookie_title: "Cookie",
+
+cookie_text:
+`Il sito non utilizza cookie di profilazione, strumenti pubblicitari o sistemi di tracciamento che richiedano il consenso dell'utente. Possono essere utilizzati esclusivamente cookie tecnici necessari al funzionamento del servizio di hosting.`,
+
+external_title: "Link a servizi esterni",
+
+external_text:
+`Il sito contiene collegamenti a servizi esterni come Google Maps e Instagram. L'eventuale trattamento dei dati personali da parte di tali servizi è disciplinato dalle rispettive informative privacy.`,
+
+legal_title: "Base giuridica",
+
+legal_text:
+`L'eventuale trattamento dei dati comunicati spontaneamente dall'utente è finalizzato alla gestione delle richieste ricevute.`,
+
+storage_title: "Conservazione dei dati",
+
+storage_text:
+`I dati eventualmente ricevuti tramite email o telefono saranno conservati per il tempo necessario alla gestione delle richieste.`,
+
+rights_title: "Diritti dell'interessato",
+
+rights_text:
+`L'utente può esercitare i diritti previsti dal Regolamento (UE) 2016/679 (GDPR), inclusi accesso, rettifica, cancellazione e limitazione del trattamento.`,
+
+changes_title: "Modifiche",
+
+changes_text:
+`La presente informativa può essere aggiornata in qualsiasi momento. Le modifiche saranno pubblicate su questa pagina.`,
+
+back: "← Torna al sito"
+
+},
+
+en: {
+
+title: "Privacy Policy",
+
+updated: "Last updated: June 6, 2026",
+
+owner_title: "Data Controller",
+
+owner_text:
+`Garden Bar Venezia
+Calle Lunga San Barnaba 2727
+30123 Venice (VE), Italy
+Phone: +39 350 9198767
+Email: alaminsk9070@gmail.com`,
+
+data_title: "Personal Data Processed",
+
+data_text:
+`This website does not collect personal data through registration forms, newsletters, or restricted areas. Any data voluntarily provided by phone or email will be used solely to respond to user inquiries.`,
+
+cookie_title: "Cookies",
+
+cookie_text:
+`This website does not use profiling cookies, advertising tools, or tracking systems that require user consent. Only technical cookies strictly necessary for hosting and website operation may be used.`,
+
+external_title: "External Services",
+
+external_text:
+`This website contains links to external services such as Google Maps and Instagram. Any personal data processing carried out by those services is governed by their respective privacy policies.`,
+
+legal_title: "Legal Basis",
+
+legal_text:
+`Any processing of data voluntarily provided by users is carried out solely for handling and responding to requests.`,
+
+storage_title: "Data Retention",
+
+storage_text:
+`Any data received by email or phone will be retained only for the time necessary to manage the request.`,
+
+rights_title: "User Rights",
+
+rights_text:
+`Users may exercise their rights under Regulation (EU) 2016/679 (GDPR), including access, rectification, deletion, and restriction of processing.`,
+
+changes_title: "Changes",
+
+changes_text:
+`This Privacy Policy may be updated at any time. Any changes will be published on this page.`,
+
+back: "← Back to website"
+
+}
+
+};
+
+function setLang(lang){
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.dataset.i18n;
+    el.innerText = translations[lang][key];
+  });
+}
+
+setLang("it");
+</script>
+
+</body>
+</html>
